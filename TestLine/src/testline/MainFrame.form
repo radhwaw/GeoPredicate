@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.8" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+    <Property name="title" type="java.lang.String" value="Line Testing"/>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="ff" green="ff" red="ff" type="rgb"/>
+    </Property>
+    <Property name="name" type="java.lang.String" value="FrameMain" noResource="true"/>
+  </Properties>
+  <AccessibilityProperties>
+    <Property name="AccessibleContext.accessibleName" type="java.lang.String" value="FrameMain"/>
+  </AccessibilityProperties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="PanelDraw" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="ButtonOrientation" max="32767" attributes="0"/>
+                      <Component id="ButtonPoint" max="32767" attributes="0"/>
+                      <Component id="ButtonLine" max="32767" attributes="0"/>
+                      <Component id="ButtonReset" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="LabelP1" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelP2" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelP" min="-2" max="-2" attributes="0"/>
+                  <Component id="LabelOrientationC" min="-2" max="-2" attributes="0"/>
+                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                      <Component id="LabelOrientationY" alignment="0" max="32767" attributes="0"/>
+                      <Component id="LabelOrientationX" alignment="0" max="32767" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace pref="122" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <Component id="ButtonLine" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="ButtonPoint" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="ButtonOrientation" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Component id="ButtonReset" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="80" max="-2" attributes="0"/>
+                      <Component id="LabelP1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="LabelP2" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="LabelP" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="LabelOrientationC" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="LabelOrientationX" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="LabelOrientationY" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="0" pref="153" max="32767" attributes="0"/>
+                  </Group>
+                  <Component id="PanelDraw" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="PanelDraw">
+      <Properties>
+        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="ff" green="ff" red="ff" type="rgb"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel()&#xa;{&#xa;    public void paintComponent(Graphics g)&#xa;    {&#xa;        super.paintComponent(g);&#xa;        Graphics2D g2d = (Graphics2D) g;&#xa;        g2d.setColor(Color.blue);&#xa;        g2d.setRenderingHint(&#xa;            RenderingHints.KEY_ANTIALIASING,&#xa;            RenderingHints.VALUE_ANTIALIAS_ON);&#xa;        g2d.setStroke(new BasicStroke(8,&#xa;            BasicStroke.CAP_ROUND, BasicStroke.JOIN_BEVEL));&#xa;        //g2d.fill(createArrowShape(p1,p2));&#xa;        g.drawLine((int)p1.getX(), (int)p1.getY(), (int)p2.getX(), (int)p2.getY());&#xa;        g2d.setColor(Color.red);&#xa;        line = new Line2D.Double(p1, p2);&#xa;        g.drawLine((int)point.getX(), (int)point.getY(), (int)point.getX(), (int)point.getY());&#xa;        drawArrowHead(g2d);&#xa;        &#xa;        LabelP1.setText(&quot;LP1: &quot;+p1.getX()+&quot;, &quot;+p1.getY());&#xa;        LabelP2.setText(&quot;LP2: &quot;+p2.getX()+&quot;, &quot;+p2.getY());&#xa;        LabelP.setText(&quot;LP: &quot;+point.getX()+&quot;, &quot;+point.getY());&#xa;    }&#xa;}"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="786" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+    <Component class="javax.swing.JButton" name="ButtonLine">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Line"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonLineActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ButtonPoint">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Point"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonPointActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ButtonOrientation">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Orientation"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonOrientationActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="ButtonReset">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Reset"/>
+        <Property name="enabled" type="boolean" value="false"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="ButtonResetActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelP1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LP1:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelP2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LP2:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelP">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="LP:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelOrientationC">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OrientationC:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelOrientationX">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OrientationX:"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="LabelOrientationY">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="OrientationY:"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
